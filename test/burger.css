@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+.menuItem {
+  display: column;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  padding: 4px;
+  border: none;
+  background: none;
+  color: #f7faf4;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: #3c3b38;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateY(0);
+  align-items: left;
+}
+
+img {
+  padding: 5px;
+  width: 0px;
+  filter: drop-shadow(3px 6px 9px black);
+  border-radius: 10px;
+}

@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+body {
+  background-color: #3c3b38;
+  justify-content: center;
+  font-family: Sofia Pro, sans-serif;
+  font-weight: bolder;
+  color: var(--text);
+  background-image: url(sketch.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  place-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* navigation bar */
+/* title */
+.title {
+  position: absolute;
+  top: 30px;
+  color: #f7faf4;
+  font-size: 45px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* nav bar */
+.sidenav {
+  display: block;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: none;
+  overflow-x: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.hide {
+  display:none;
+}
+
+.sidenav a {
+  position: relative;
+  display: block;
+  transition: box-shadow 0.3s;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.sidenav a:hover {
+  cursor: pointer;
+  filter: drop-shadow(3px 6px 9px black);
+  box-shadow: inset 2px 4px 10px #000000;
+
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.logo {
+  position: relative;
+  width: 120px;
+  filter: drop-shadow(3px 6px 9px black);
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 150px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.facilitiesPage {
+  padding: 5px;
+  width: 50px;
+  filter: drop-shadow(3px 6px 9px black);
+  border-radius: 10px;
+}
+
+.maintenancePage {
+  padding: 5px;
+  width: 50px;
+  filter: drop-shadow(3px 6px 9px black);
+  border-radius: 10px;
+}
+
+.eventsPage {
+  padding: 5px;
+  width: 50px;
+  filter: drop-shadow(3px 6px 9px black);
+  border-radius: 10px;
+}
+
+.navigationPage {
+  padding: 5px;
+  width: 50px;
+  filter: drop-shadow(3px 6px 9px black);
+  border-radius: 10px;
+}
+
+.informationPage {
+  padding: 5px;
+  width: 50px;
+  filter: drop-shadow(3px 6px 9px black);
+  border-radius: 10px;
+}
+
+.backbtn {
+  position: relative;
+  width: auto;
+  height: 81px;
+  filter: drop-shadow(6px 9px 10px black);
+  position: absolute;
+}
+
+/* FAQ */
+.container-fluid {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container-fluid h2 {
+  color: #f77f00;
+  position: relative;
+  width: 23rem;
+}
+
+.faq {
+  width: 100%;
+  padding: 0 5px;
+  border: 2px solid #f7faf4;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  background-color: #f7faf4;
+}
+
+.faq .icon {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(icons/arowdown.png) 0;
+  float: left;
+  transition: all 0.5s ease-in;
+}
+
+.faq h5 {
+  font-size: 20px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #3c3b38;
+}
+
+.panel {
+  padding: 0 15px;
+  font-size: 14px;
+  text-align: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-in;
+  background-color: #f7faf4;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+.qrcode {
+  display: flex;
+  width: 150px;
+  height: auto;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #3c3b38;
+}
+
+.click {
+  background: #f77f00;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 1s ease;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+.hide {
+    display: block;
+  }
+
+  .sidenav {
+    display: none;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+  .faq {
+    width: 350px;
+    padding: 0 5px;
+    border: 2px solid #f7faf4;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    background-color: #f7faf4;
+    text-align: relative;
+  }
+
+  .faq .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(icons/arowdown.png) 0;
+    float: left;
+    transition: all 0.5s ease-in;
+  }
+
+  .faq h5 {
+    font-size: 20px;
+    margin: 0;
+    padding: 3px 0 0 0;
+    font-weight: normal;
+    color: #3c3b38;
+  }
+
+  .panel {
+    width: 350px;
+    padding: 0 15px;
+    font-size: 20px;
+    text-align: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in;
+    background-color: #f7faf4;
+    border-radius: 10px;
+    font-weight: normal;
+  }
+
+  .qrcode {
+    width: 100px;
+    height: auto;
+    margin-left: 70px;
+  }
+
+  .logo {
+    position: relative;
+    width: 100px;
+    filter: drop-shadow(3px 6px 9px black);
+    margin-top: 30px;
+    margin-bottom: 120px;
+  }
+
+  .sidenav {
+    display: none;
+  }
+}

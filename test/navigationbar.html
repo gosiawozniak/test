@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" type="text/css" href="style2.css">
+
+</head>
+
+<body>
+    <div class="sidebar" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">&times;</button>
+        <a href="#" class="button1"><img class="facilitiesPage" src="icons/facilities.png"></a>
+        <a href="#" class="button2"><img class="maintenancePage" src="icons/CARETAKER.png"></a>
+        <a href="#" class="button3"><img class="eventsPage" src="icons/events.png"></a>
+        <a href="#" class="button4"><img class="navigationPage" src="icons/NAVIGATION.png"></a>
+        <a href="#" class="button5"><img class="informationPage" src="icons/file.png"></a>
+    </div>
+    
+    <!-- Page Content -->
+    <div class="side-teal">
+        <button class="button teal xlarge" onclick="w3_open()">
+        <span class="material-symbols-outlined"></span></button>
+        <div class="side-container">
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
